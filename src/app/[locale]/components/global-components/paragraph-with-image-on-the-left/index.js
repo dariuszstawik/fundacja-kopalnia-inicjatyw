@@ -1,8 +1,9 @@
 "use client";
+
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from "../section-title";
-import Link from "next/link";
 import Button from "../button";
+import Link from "next/link";
 
 export default function ParagraphWithImageOnTheLeft({
   title,

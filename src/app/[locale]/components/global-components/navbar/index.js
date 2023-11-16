@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Hamburger from "../hamburger";
+
 import { usePathname, useSearchParams } from "next/navigation";
 import Logo from "../Logo";
+import Hamburger from "../hamburger";
 
 const Navbar = ({ isActive, start, about, projects, news, contact }) => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
