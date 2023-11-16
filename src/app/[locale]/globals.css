@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply min-h-screen w-full overflow-x-hidden bg-gray-50 box-border text-darkGray text-lg;  
+  }
+
+section {
+    @apply w-full pt-28 overflow-hidden;
+}
+
+h1 {
+  @apply text-4xl lg:text-5xl
+}
+
+h2 {
+  @apply text-3xl lg:text-4xl
+}
+
+h3 {
+  @apply text-xl lg:text-2xl xl:text-3xl text-primaryBlue my-4
+}
+
+h4 {
+  @apply text-lg lg:text-xl xl:text-2xl
+}
+
+p {
+  @apply text-lg leading-normal antialiased my-2;
+}
+
+section .heroSection {
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%);
+}
+
+.radial-gradient-ellipse-at-center {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%);
+}
