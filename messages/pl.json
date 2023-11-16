@@ -1,0 +1,13 @@
+{
+    "Index": {
+      "title": "Witaj świecie!"
+    },
+
+    "Navbar": {
+      "start": "Start",
+      "about": "O nas",
+      "projects": "Projekty",
+      "news": "Aktualności",
+      "contact": "Kontakt"
+    }    
+  }
