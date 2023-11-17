@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
 import { usePathname, useSearchParams } from "next/navigation";
 import Logo from "../Logo";
 import Hamburger from "../hamburger";
+import FlagPL from "../flag-pl";
+import FlagEn from "../flag-en";
+import LocaleSwitcher from "../locale-switcher";
 
 const Navbar = ({ isActive, start, about, projects, news, contact }) => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
@@ -74,6 +76,9 @@ const Navbar = ({ isActive, start, about, projects, news, contact }) => {
             </Link>
           </li>
         </ul>
+
+        <LocaleSwitcher />
+
         <Hamburger
           hasCloseIcon={isMobileMenuActive ? true : false}
           toggleMobileMenu={toggleMobileMenu}
