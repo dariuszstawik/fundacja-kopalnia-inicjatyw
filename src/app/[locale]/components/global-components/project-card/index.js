@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ProjectCard({ projectTitle, img }) {
   return (
     <Link href="/">
-      <div className="flex flex-col w-96 gap-8">
+      <div className="flex flex-col gap-8">
         <img
           src={img?.fields.file.url ? img.fields.file.url : ""}
           alt={img?.fields.file.description ? img.fields.file.description : ""}

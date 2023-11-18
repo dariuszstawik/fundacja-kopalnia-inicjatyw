@@ -25,7 +25,7 @@ export default function HomepageNewsSection({ newsPosts, locale }) {
   return (
     <section>
       <SectionTitle>{t("title")} </SectionTitle>
-      <ul className="grid grid-cols-1 gap-16 xl:grid-cols-2 mx-auto px-10 mt-16">
+      <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28 mt-16">
         {newsList(4)}
       </ul>
     </section>
