@@ -3,11 +3,41 @@
       "title": "Hello world!"
     },
 
+    "Hero section": {
+      "title": "We organize",
+      "subtitle": "international",
+      "subtitle-highlighted": "youth exchanges",
+      "button": "get to know us"
+    },
+
+
     "Navbar": {
       "start": "Start",
       "about": "About",
       "projects": "Projects",
       "news": "News",
       "contact": "Contact"
+    },
+
+    "Projects section": {
+      "title": "Last projects"
+    },
+
+    "News section": {
+      "title": "Latest news"
+    },
+
+    "Partners section": {
+      "title": "Grantmakers and partners"
+    },
+
+    "News card": {
+      "read more": "read more"
+    },
+
+    "Footer": {
+      "office": "Office",
+      "contact": "Contact",
+      "about": "The Foundation brings together young and active people who want to have an impact on the future of Europe and their region."
     }
   }

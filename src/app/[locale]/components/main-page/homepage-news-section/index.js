@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import NewsCard from "../../global-components/news-card";
 import SectionTitle from "../../global-components/section-title";
 
 export default function HomepageNewsSection({ newsPosts, locale }) {
+  const t = useTranslations("News section");
   const newsList = (newsAmount) => {
     return (
       newsPosts &&
@@ -22,7 +24,7 @@ export default function HomepageNewsSection({ newsPosts, locale }) {
 
   return (
     <section>
-      <SectionTitle>Aktualności</SectionTitle>
+      <SectionTitle>{t("title")} </SectionTitle>
       <ul className="grid grid-cols-1 gap-16 xl:grid-cols-2 mx-auto px-10 mt-16">
         {newsList(4)}
       </ul>

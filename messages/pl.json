@@ -3,11 +3,40 @@
       "title": "Witaj świecie!"
     },
 
+    "Hero section": {
+      "title": "Organizujemy",
+      "subtitle": "międzynarodowe",
+      "subtitle-highlighted": "wymiany młodzieżowe",
+      "button": "poznaj nas"
+    },
+
     "Navbar": {
       "start": "Start",
       "about": "O nas",
       "projects": "Projekty",
       "news": "Aktualności",
       "contact": "Kontakt"
-    }    
+    },
+
+    "Projects section": {
+      "title": "Ostatnie projekty"
+    },
+
+    "News section": {
+      "title": "Aktualności"
+    },
+    
+    "Partners section": {
+      "title": "Grantodawcy i partnerzy"
+    },
+
+    "News card": {
+      "read more": "czytaj więcej"
+    },
+
+    "Footer": {
+      "office": "Biuro",
+      "contact": "Kontakt",
+      "about": "Fundacja zrzesza młodych i aktywnych ludzi, którzy pragną mieć wpływ na przyszłość Europy oraz swojego regionu."
+    }
   }

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import ArrowLong from "../arrow-long";
+import { useTranslations } from "next-intl";
 
 const NewsCard = ({ title, slug, img, locale }) => {
+  const t = useTranslations("News card");
   return (
     <div className="max-w-xl mx-auto transition duration-300 transform bg-primaryGray border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
       <div className=" relative w-1/2">
@@ -22,9 +25,10 @@ const NewsCard = ({ title, slug, img, locale }) => {
         </div>
         <button className="relative text-primaryBlue before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-green-800 before:transition hover:before:scale-100">
           {" "}
-          <Link href={`/${locale}/news/${slug}`}>
+          <Link href="">
+            {/* <Link href={`/${locale}/news/${slug}`}> */}
             {/* <Link href={`/news/${slug}`}> */}
-            read more
+            {t("read more")}
             {/* <ArrowLong /> */}
           </Link>
         </button>
