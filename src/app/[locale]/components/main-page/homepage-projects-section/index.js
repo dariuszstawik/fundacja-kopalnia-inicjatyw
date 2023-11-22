@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import ProjectCard from "../../global-components/project-card";
 import SectionTitle from "../../global-components/section-title";
+import { Fade } from "react-awesome-reveal";
 
 export default function HomepageProjectsSection({ projects }) {
   const t = useTranslations("Projects section");
