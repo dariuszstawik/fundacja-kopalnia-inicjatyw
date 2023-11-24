@@ -13,7 +13,7 @@ export default function ParagraphWithImageOnTheLeft({
   buttonLink,
 }) {
   return (
-    <div className={`w-full py-16 flex flex-col lg:flex-row`}>
+    <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
       <Slide
         direction="left"
         delay={600}

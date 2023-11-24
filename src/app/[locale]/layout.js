@@ -20,7 +20,6 @@ export function generateStaticParams() {
 }
 
 export default function LocaleLayout({ children, params: { locale } }) {
-  // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
   unstable_setRequestLocale(locale);
   const t = useTranslations("Navbar");

@@ -2,7 +2,6 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import "./globals.css";
 import { client } from "../../../lib/contentful/client";
 import HeroSection from "./components/main-page/hero-section";
-import HomePageAboutSection from "./components/main-page/homepage-about-section";
 import ParagraphWithImageOnTheLeft from "./components/global-components/paragraph-with-image-on-the-left";
 import HomepageProjectsSection from "./components/main-page/homepage-projects-section";
 import HomepageNewsSection from "./components/main-page/homepage-news-section";
@@ -52,7 +51,6 @@ export default async function Home({ params: { locale } }) {
   return (
     <>
       <HeroSection />
-      {/* <HomePageAboutSection /> */}
       <ParagraphWithImageOnTheLeft
         title={homepageAboutSection.title}
         buttonTitle={homepageAboutSection.buttonTitle}
