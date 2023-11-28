@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Logo = ({ className }) => {
+const Logo = ({ className, onClick }) => {
   return (
-    <Link href="/">
+    <Link href="/" onClick={onClick}>
       <Image
         src="/logo.svg"
         width="100"
