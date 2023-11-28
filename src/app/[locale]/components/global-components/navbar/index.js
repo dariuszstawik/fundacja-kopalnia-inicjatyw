@@ -28,7 +28,7 @@ const Navbar = ({
   };
 
   const handleRefresh = () => {
-    router.refresh();
+    router.reload();
   };
 
   return (
