@@ -18,7 +18,7 @@ export default function ParagraphWithImageOnTheRight({
     >
       <Slide
         direction="right"
-        delay={600}
+        delay={200}
         triggerOnce
         className="flex justify-center items-start"
       >

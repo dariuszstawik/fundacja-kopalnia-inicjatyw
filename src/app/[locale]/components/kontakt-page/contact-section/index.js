@@ -19,7 +19,7 @@ export default function ContactSection({
     <div className="w-full px-10 lg:px-20 flex flex-col lg:flex-row-reverse">
       <Slide
         direction="right"
-        delay={300}
+        delay={200}
         triggerOnce
         className="flex justify-center items-start"
       >

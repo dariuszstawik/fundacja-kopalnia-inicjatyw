@@ -16,7 +16,7 @@ export default function ParagraphWithImageOnTheLeft({
     <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
       <Slide
         direction="left"
-        delay={600}
+        delay={200}
         triggerOnce
         className="flex justify-center items-start"
       >
