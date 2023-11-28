@@ -1,5 +1,4 @@
 "use client";
-
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from "../section-title";
 import Button from "../button";
@@ -11,6 +10,7 @@ export default function ParagraphWithImageOnTheLeft({
   img,
   buttonTitle,
   buttonLink,
+  locale,
 }) {
   return (
     <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
@@ -18,10 +18,9 @@ export default function ParagraphWithImageOnTheLeft({
         direction="left"
         delay={600}
         triggerOnce
-        className="w-1/2 h-full flex justify-center items-start"
+        className="flex justify-center items-start"
       >
         <div
-          className=""
           style={{
             clipPath:
               "polygon(66% 0, 88% 21%, 100% 65%, 81% 100%, 20% 100%, 0 64%, 22% 14% )",
@@ -34,16 +33,16 @@ export default function ParagraphWithImageOnTheLeft({
             alt={
               img?.fields.file.description ? img.fields.file.description : ""
             }
-            className="rounded-md"
+            style={{ width: "600px", height: "440px", objectFit: "cover" }}
           />
         </div>
       </Slide>
-      <div className="w-1/2 ml-16 mr-16 lg:ml-16 lg:mr-32 flex flex-col gap-2 text-lg">
+      <div className="mx-10 lg:ml-24 lg:mr-32 flex flex-col gap-2 text-lg">
         <SectionTitle isAlignedLeft>{title}</SectionTitle>
         {children}
         {buttonTitle && (
           <Button className="mr-auto mt-6">
-            <Link href="/">{buttonTitle}</Link>
+            <Link href={`/${locale}/${buttonLink}`}>{buttonTitle}</Link>
           </Button>
         )}
       </div>

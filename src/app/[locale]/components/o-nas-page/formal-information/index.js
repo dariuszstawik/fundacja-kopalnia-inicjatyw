@@ -44,6 +44,7 @@ const Item = ({ title, children }) => {
 
 export const FormalInformation = ({ content }) => {
   const {
+    formalInformationTitle,
     formalInformationTitle1,
     formalInformationTitle2,
     formalInformationTitle3,
@@ -53,8 +54,8 @@ export const FormalInformation = ({ content }) => {
   } = content;
 
   return (
-    <div className="py-6 mx-auto max-w-3xl">
-      <SectionTitle>Dokumenty i informacje formalne</SectionTitle>
+    <div className="py-6 mx-auto max-w-3xl px-10">
+      <SectionTitle>{formalInformationTitle}</SectionTitle>
       <div className="max-w-2xl sm:mx-auto lg:max-w-full">
         <div className="space-y-4">
           {formalInformationTitle1 && (

@@ -24,7 +24,8 @@
     },
 
     "News section": {
-      "title": "Latest news"
+      "title": "Latest news",
+      "read more": "read more"
     },
 
     "Partners section": {
@@ -33,6 +34,25 @@
 
     "News card": {
       "read more": "read more"
+    },
+
+    "About": {
+      "title": "About us"
+    },
+
+    "Projects": {
+      "title": "Projects"
+    },
+
+    "News": {
+      "title": "News",
+      "more": "Load more",
+      "read more": "read more"
+    },
+
+    "Contact": {
+      "title": "Contact",
+      "social title": "Stay in touch:"
     },
 
     "Footer": {

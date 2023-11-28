@@ -1,22 +1,17 @@
-import { client } from "../../../../lib/contentful/client";
-import NewsList from "../components/aktualnosci-page/news-list";
+import { useTranslations } from "next-intl";
 import PageHeader from "../components/global-components/page-header";
+import SectionTitle from "../components/global-components/section-title";
+import News from "../components/aktualnosci-page/news";
 
-async function getContentfulContent(locale) {
-  const resNews = await client.getEntries({
-    content_type: "news",
-    locale: locale,
-  });
-
-  return resNews.items;
-}
-
-export default async function Aktualnosci({ params: { locale } }) {
-  const newsPosts = await getContentfulContent(locale);
+export default function Aktualnosci({ params: { locale } }) {
+  const t = useTranslations("News");
   return (
     <div>
-      <PageHeader>Aktualności</PageHeader>
-      <NewsList newsPosts={newsPosts} locale={locale} />
+      <PageHeader>{t("title")}</PageHeader>
+      <section className="flex flex-col gap-16">
+        <SectionTitle>{t("title")}</SectionTitle>
+        <News locale={locale} more={t("more")} readMore={t("read more")} />
+      </section>
     </div>
   );
 }

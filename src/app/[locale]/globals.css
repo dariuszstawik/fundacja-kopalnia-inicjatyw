@@ -7,7 +7,7 @@ body {
   }
 
 section {
-    @apply w-full pt-28 overflow-hidden;
+    @apply w-full pt-24 overflow-hidden;
 }
 
 h1 {

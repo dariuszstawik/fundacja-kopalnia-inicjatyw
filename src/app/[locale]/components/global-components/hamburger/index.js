@@ -4,7 +4,7 @@ const Hamburger = ({ hasCloseIcon, toggleMobileMenu }) => {
       {hasCloseIcon ? (
         <svg
           onClick={toggleMobileMenu}
-          className="block w-8 my-4 lg:hidden"
+          className="block w-8 my-4 lg:hidden text-white"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
@@ -21,7 +21,7 @@ const Hamburger = ({ hasCloseIcon, toggleMobileMenu }) => {
       ) : (
         <svg
           onClick={toggleMobileMenu}
-          className="block w-8 my-4 lg:hidden"
+          className="block w-8 my-4 lg:hidden text-white"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"

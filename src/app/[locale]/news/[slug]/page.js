@@ -33,6 +33,7 @@ export default async function NewsPost({ params }) {
           lead={newsPost.fields.lead}
           content={documentToReactComponents(newsPost.fields.content)}
           img={newsPost.fields.image ? newsPost.fields.image : ""}
+          gallery={newsPost.fields.gallery ? newsPost.fields.gallery : ""}
         ></SingleArticle>
       </div>
     </>

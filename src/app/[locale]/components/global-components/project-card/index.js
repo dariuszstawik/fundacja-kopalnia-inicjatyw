@@ -2,10 +2,10 @@
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
-export default function ProjectCard({ projectTitle, img }) {
+export default function ProjectCard({ projectTitle, img, slug, locale }) {
   return (
     <Fade direction="bottom" delay="50" triggerOnce>
-      <Link href="/">
+      <Link href={`/${locale}/projekty/${slug}`}>
         <div className="flex flex-col gap-8">
           <img
             src={img?.fields.file.url ? img.fields.file.url : ""}

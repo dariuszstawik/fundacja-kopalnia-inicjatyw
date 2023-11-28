@@ -50,16 +50,17 @@ export default async function Home({ params: { locale } }) {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection locale={locale} />
       <ParagraphWithImageOnTheLeft
         title={homepageAboutSection.title}
         buttonTitle={homepageAboutSection.buttonTitle}
         buttonLink={homepageAboutSection.buttonLink}
         img={homepageAboutSection.image}
+        locale={locale}
       >
         {documentToReactComponents(homepageAboutSection.content)}
       </ParagraphWithImageOnTheLeft>
-      <HomepageProjectsSection projects={projects} />
+      <HomepageProjectsSection projects={projects} locale={locale} />
       <HomepageNewsSection newsPosts={newsPosts} locale={locale} />
       <PartnersSection partners={partners} />
     </>

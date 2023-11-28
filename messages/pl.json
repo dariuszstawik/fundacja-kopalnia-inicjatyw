@@ -23,7 +23,8 @@
     },
 
     "News section": {
-      "title": "Aktualności"
+      "title": "Aktualności",
+      "read more": "czytaj więcej"
     },
     
     "Partners section": {
@@ -32,6 +33,25 @@
 
     "News card": {
       "read more": "czytaj więcej"
+    },
+
+    "About": {
+      "title": "O nas"
+          },
+
+    "Projects": {
+      "title": "Projekty"
+    },
+
+    "News": {
+      "title": "Aktualności",
+      "more": "Załaduj więcej",
+      "read more": "czytaj więcej"
+    },
+
+    "Contact": {
+      "title": "Kontakt",
+      "social title": "Będźmy w kontakcie:"
     },
 
     "Footer": {

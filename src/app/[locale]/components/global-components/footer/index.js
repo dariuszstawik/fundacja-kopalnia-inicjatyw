@@ -8,7 +8,7 @@ export default function Footer() {
     <div>
       <section className="relative bg-darkGray mt-32 text-white h-auto mb-0">
         <div className="pb-12 pt-0">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-10">
             <div className="flex flex-wrap mb-6 lg:mb-10">
               <div className="mb-auto w-full lg:w-1/5">
                 <Logo className="mt-4 w-64" />
@@ -16,6 +16,17 @@ export default function Footer() {
               <div className="mb-5 w-full lg:w-1/5">
                 <h4 className="mb-2">Fundacja Kopalnia Inicjatyw</h4>
                 <p>{t("about")}</p>
+                <div className="flex gap-8 mt-6">
+                  <a href="https://www.facebook.com/kopalnia">
+                    <img src="/facebook.png" className="w-8" />
+                  </a>
+                  <a href="https://www.youtube.com/@fundacjakopalniainicjatyw5380">
+                    <img src="/youtube.png" className="w-8" />
+                  </a>
+                  <a href="https://www.flickr.com/photos/153333342@N06/">
+                    <img src="/flickr.png" className="w-8" />
+                  </a>
+                </div>
               </div>
               <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
                 <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">

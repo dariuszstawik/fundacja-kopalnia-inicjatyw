@@ -1,9 +1,15 @@
-import { useTranslations } from "next-intl";
+"use client";
+import { useState } from "react";
 import NewsCard from "../../global-components/news-card";
-import SectionTitle from "../../global-components/section-title";
+import Button from "../../global-components/button";
 
-export default function NewsList({ newsPosts, locale }) {
-  const t = useTranslations("News section");
+export default function NewsList({ newsPosts, locale, more, readMore }) {
+  const [maxAmount, setMaxAmount] = useState(4);
+
+  const increaseMaxAmount = () => {
+    setMaxAmount(maxAmount + 2);
+  };
+
   const newsList = (newsAmount) => {
     return (
       newsPosts &&
@@ -15,6 +21,7 @@ export default function NewsList({ newsPosts, locale }) {
               slug={item.fields.slug}
               img={item.fields.image ? item.fields.image : ""}
               locale={locale}
+              readMore={readMore}
             />{" "}
           </li>
         );
@@ -23,11 +30,15 @@ export default function NewsList({ newsPosts, locale }) {
   };
 
   return (
-    <section>
-      <SectionTitle>{t("title")} </SectionTitle>
-      <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28 mt-16">
-        {newsList(4)}
+    <div>
+      <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28">
+        {newsList(maxAmount)}
       </ul>
-    </section>
+      <div className="flex justify-center m-16">
+        {maxAmount < newsPosts.length && (
+          <Button onClick={increaseMaxAmount}>{more}</Button>
+        )}
+      </div>
+    </div>
   );
 }

@@ -15,6 +15,7 @@ export default function HomepageNewsSection({ newsPosts, locale }) {
               slug={item.fields.slug}
               img={item.fields.image ? item.fields.image : ""}
               locale={locale}
+              readMore={t("read more")}
             />{" "}
           </li>
         );

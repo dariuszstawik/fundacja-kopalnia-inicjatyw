@@ -33,6 +33,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
           projects={t("projects")}
           news={t("news")}
           contact={t("contact")}
+          locale={locale}
         />
         {children}
         <Footer />
