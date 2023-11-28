@@ -10,7 +10,7 @@ export default function HeroSection({ locale }) {
         autoPlay
         muted
         loop
-        className="min-h-[600px] xl:h-screen object-cover"
+        className="min-h-[600px] xl:h-screen w-screen object-cover"
       >
         <source src="hero-video5.webm" type="video/webm" />
       </video>
