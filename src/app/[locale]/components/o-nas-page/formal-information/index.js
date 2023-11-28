@@ -54,31 +54,33 @@ export const FormalInformation = ({ content }) => {
   } = content;
 
   return (
-    <div className="py-6 mx-auto max-w-3xl px-10">
-      <SectionTitle>{formalInformationTitle}</SectionTitle>
-      <div className="max-w-2xl sm:mx-auto lg:max-w-full">
-        <div className="space-y-4">
-          {formalInformationTitle1 && (
-            <Item title={formalInformationTitle1}>
-              {documentToReactComponents(formalInformationContent1)}
-            </Item>
-          )}
-        </div>
-        <div className="space-y-4">
-          {formalInformationTitle2 && (
-            <Item title={formalInformationTitle2}>
-              {documentToReactComponents(formalInformationContent2)}
-            </Item>
-          )}
-        </div>
-        <div className="space-y-4">
-          {formalInformationTitle3 && (
-            <Item title={formalInformationTitle3}>
-              {documentToReactComponents(formalInformationContent3)}
-            </Item>
-          )}
+    <section>
+      <div className="mx-auto max-w-3xl px-10">
+        <SectionTitle>{formalInformationTitle}</SectionTitle>
+        <div className="max-w-2xl sm:mx-auto lg:max-w-full">
+          <div className="space-y-4">
+            {formalInformationTitle1 && (
+              <Item title={formalInformationTitle1}>
+                {documentToReactComponents(formalInformationContent1)}
+              </Item>
+            )}
+          </div>
+          <div className="space-y-4">
+            {formalInformationTitle2 && (
+              <Item title={formalInformationTitle2}>
+                {documentToReactComponents(formalInformationContent2)}
+              </Item>
+            )}
+          </div>
+          <div className="space-y-4">
+            {formalInformationTitle3 && (
+              <Item title={formalInformationTitle3}>
+                {documentToReactComponents(formalInformationContent3)}
+              </Item>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

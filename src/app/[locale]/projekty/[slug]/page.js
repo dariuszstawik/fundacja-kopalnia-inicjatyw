@@ -4,6 +4,8 @@ import ParagraphWithImageOnTheRight from "../../components/global-components/par
 import PageHeader from "../../components/global-components/page-header";
 import ParagraphWithImageOnTheLeft from "../../components/global-components/paragraph-with-image-on-the-left";
 import ProjectNewsList from "../../components/projekty-page/project-news-list";
+import ImageGallery from "../../components/global-components/image-gallery";
+import SectionTitle from "../../components/global-components/section-title";
 
 async function getContntfulContent(slug, locale) {
   const res = await client.getEntries({
@@ -62,6 +64,13 @@ export default async function Project({ params }) {
         locale={locale}
         category={project.fields.category}
       />
+
+      {project.fields.gallery && (
+        <section className="px-10 lg:px-40">
+          <SectionTitle>{locale === "en" ? "Gallery" : "Galeria"}</SectionTitle>
+          <ImageGallery gallery={project.fields.gallery} />
+        </section>
+      )}
     </div>
   );
 }

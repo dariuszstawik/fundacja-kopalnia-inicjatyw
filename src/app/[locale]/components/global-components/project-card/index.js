@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
+import ArrowLong from "../arrow-long";
 
 export default function ProjectCard({ projectTitle, img, slug, locale }) {
   return (

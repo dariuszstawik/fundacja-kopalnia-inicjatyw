@@ -4,7 +4,7 @@ import Link from "next/link";
 import ArrowLong from "../arrow-long";
 import { Fade } from "react-awesome-reveal";
 
-const NewsCard = ({ title, slug, img, locale, readMore }) => {
+const NewsCard = ({ title, slug, img, locale, readMore, isBlue }) => {
   return (
     <Fade bottom triggerOnce>
       <div className="max-w-xl mx-auto transition duration-300 transform bg-primaryGray border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
@@ -18,13 +18,21 @@ const NewsCard = ({ title, slug, img, locale, readMore }) => {
           />
           <div className=" h-6 bg-primaryBlue" />
         </div>
-        <div className="w-1/2 flex flex-col justify-between items-start px-6 py-8 bg-gray-200 rounded-b sm:px-8">
+        <div
+          className={`w-1/2 flex flex-col justify-between items-start px-6 py-8 ${
+            isBlue ? "bg-primaryBlue" : "bg-gray-200"
+          }  rounded-b sm:px-8`}
+        >
           <div className="flex flex-col justify-start items-start">
-            <h5 className="mb-2 text-xl text-left leading-none sm:text-2xl">
+            <h4 className={`mb-2 text-left ${isBlue && "text-white"} `}>
               {title}
-            </h5>
+            </h4>
           </div>
-          <button className="relative text-primaryBlue before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-green-800 before:transition hover:before:scale-100">
+          <button
+            className={`relative  ${
+              isBlue ? "text-white" : "text-primaryBlue"
+            } before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primaryBlue before:transition hover:before:scale-100`}
+          >
             <Link href={`/${locale}/news/${slug}`}>
               {readMore}
               <ArrowLong />

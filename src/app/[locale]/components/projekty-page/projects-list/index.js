@@ -37,7 +37,7 @@ export default function ProjectsList({ projects, locale }) {
 
   return (
     <div className="">
-      <ul className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <ul className="grid grid-cols-1 lg:grid-cols-3 gap-12 list-none">
         {projectsList(maxAmount)}
       </ul>
       <div className="flex justify-center m-16">

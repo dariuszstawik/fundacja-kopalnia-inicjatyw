@@ -17,13 +17,19 @@ export default function Footer() {
                 <h4 className="mb-2">Fundacja Kopalnia Inicjatyw</h4>
                 <p>{t("about")}</p>
                 <div className="flex gap-8 mt-6">
-                  <a href="https://www.facebook.com/kopalnia">
+                  <a href="https://www.facebook.com/kopalnia" target="_blank">
                     <img src="/facebook.png" className="w-8" />
                   </a>
-                  <a href="https://www.youtube.com/@fundacjakopalniainicjatyw5380">
+                  <a
+                    href="https://www.youtube.com/@fundacjakopalniainicjatyw5380"
+                    target="_blank"
+                  >
                     <img src="/youtube.png" className="w-8" />
                   </a>
-                  <a href="https://www.flickr.com/photos/153333342@N06/">
+                  <a
+                    href="https://www.flickr.com/photos/153333342@N06/"
+                    target="_blank"
+                  >
                     <img src="/flickr.png" className="w-8" />
                   </a>
                 </div>
@@ -50,13 +56,16 @@ export default function Footer() {
         </p>
 
         <p className="text-sm mx-auto text-center mb-2">
-          {/* <Link href="/polityka-prywatnosci">polityka prywatności</Link> */}
           <Link href="/">polityka prywatności</Link>
         </p>
 
         <p className="text-sm mx-auto text-center">
           Created by{" "}
-          <a href="https://stronyjaksiepatrzy.pl" className="text-primaryGreen">
+          <a
+            href="https://stronyjaksiepatrzy.pl"
+            target="_blank"
+            className="text-primaryBlue"
+          >
             Strony jak się patrzy
           </a>
         </p>

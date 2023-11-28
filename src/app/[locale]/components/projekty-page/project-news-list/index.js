@@ -14,10 +14,12 @@ export default function ProjectNewsList({ newsPosts, locale, category }) {
         return (
           <li key={i} className="mx-auto">
             <NewsCard
+              isBlue
               title={item.fields.title}
               slug={item.fields.slug}
               img={item.fields.image ? item.fields.image : ""}
               locale={locale}
+              readMore={t("read more")}
             />{" "}
           </li>
         );
@@ -28,9 +30,9 @@ export default function ProjectNewsList({ newsPosts, locale, category }) {
   return (
     <>
       {filteredNewsPosts.length && (
-        <section>
+        <section className="bg-gray-200 pb-20">
           <SectionTitle>{t("title")} </SectionTitle>
-          <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28 mt-16">
+          <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28 mt-16 list-none">
             {newsList(6)}
           </ul>
         </section>

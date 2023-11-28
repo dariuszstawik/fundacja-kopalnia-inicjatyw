@@ -48,7 +48,7 @@ const Navbar = ({
           >
             <Link
               href="/"
-              className={`${isActive && "text-primaryGreen"}`}
+              className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
               {start}
@@ -61,7 +61,7 @@ const Navbar = ({
           >
             <Link
               href={`/${locale}/o-nas`}
-              className={`${isActive && "text-primaryGreen"}`}
+              className={`${isActive && "text-primaryBlue"}`}
             >
               {about}
             </Link>
@@ -73,7 +73,7 @@ const Navbar = ({
           >
             <Link
               href={`/${locale}/projekty`}
-              className={`${isActive && "text-primaryGreen"}`}
+              className={`${isActive && "text-primaryBlue"}`}
             >
               {projects}
             </Link>

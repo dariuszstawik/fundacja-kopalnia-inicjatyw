@@ -31,7 +31,7 @@ export default function NewsList({ newsPosts, locale, more, readMore }) {
 
   return (
     <div>
-      <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28">
+      <ul className="grid grid-cols-1 gap-8 xl:grid-cols-2 mx-auto px-10 xl:px-28 list-none">
         {newsList(maxAmount)}
       </ul>
       <div className="flex justify-center m-16">
