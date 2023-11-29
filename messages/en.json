@@ -15,6 +15,7 @@
       "start": "Start",
       "about": "About",
       "projects": "Projects",
+      "get inspired": "Get inspired",
       "news": "News",
       "contact": "Contact"
     },
@@ -42,6 +43,12 @@
 
     "Projects": {
       "title": "Projects"
+    },
+
+    "Get inspired": {
+      "title": "Get inspired",
+      "video": "Watch video",
+      "e-books": "E-books"
     },
 
     "News": {

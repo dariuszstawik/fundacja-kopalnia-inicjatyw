@@ -31,6 +31,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
           start={t("start")}
           about={t("about")}
           projects={t("projects")}
+          getInspired={t("get inspired")}
           news={t("news")}
           contact={t("contact")}
           locale={locale}

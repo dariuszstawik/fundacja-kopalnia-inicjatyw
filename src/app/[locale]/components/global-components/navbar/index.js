@@ -12,6 +12,7 @@ const Navbar = ({
   start,
   about,
   projects,
+  getInspired,
   news,
   contact,
 }) => {
@@ -76,6 +77,18 @@ const Navbar = ({
               className={`${isActive && "text-primaryBlue"}`}
             >
               {projects}
+            </Link>
+          </li>
+
+          <li
+            onClick={closeMobileMenu}
+            className="text-lg text-white hover:text-slate-500 cursor-pointer"
+          >
+            <Link
+              href={`/${locale}/zainspiruj-sie`}
+              className={`${isActive && "text-primaryBlue"}`}
+            >
+              {getInspired}
             </Link>
           </li>
 

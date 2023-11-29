@@ -14,6 +14,7 @@
       "start": "Start",
       "about": "O nas",
       "projects": "Projekty",
+      "get inspired": "Zainspiruj się",
       "news": "Aktualności",
       "contact": "Kontakt"
     },
@@ -41,6 +42,12 @@
 
     "Projects": {
       "title": "Projekty"
+    },
+
+    "Get inspired": {
+      "title": "Zainspiruj się",
+      "video": "Wideo",
+      "e-books": "Publikacje"
     },
 
     "News": {
