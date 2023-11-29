@@ -31,7 +31,7 @@ const NewsCard = ({ title, slug, img, locale, readMore, isBlue }) => {
           <button
             className={`relative  ${
               isBlue ? "text-white" : "text-primaryBlue"
-            } before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primaryBlue before:transition hover:before:scale-100`}
+            } text-sm md: text-base before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primaryBlue before:transition hover:before:scale-100`}
           >
             <Link href={`/${locale}/news/${slug}`}>
               {readMore}
