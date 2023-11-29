@@ -9,7 +9,7 @@ const Logo = ({ className, onClick }) => {
         src="/logo.svg"
         width="100"
         height="88"
-        className={`m-10 ${className}`}
+        className={`mr-10 ${className}`}
         alt="logo"
       />
     </Link>
