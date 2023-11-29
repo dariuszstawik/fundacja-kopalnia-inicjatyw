@@ -7,7 +7,7 @@ export default function ProjectCard({ projectTitle, img, slug, locale }) {
   return (
     <Fade direction="bottom" delay="50" triggerOnce>
       <Link href={`/${locale}/projekty/${slug}`}>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 transition duration-300 hover:-rotate-1">
           <img
             src={img?.fields.file.url ? img.fields.file.url : ""}
             alt={
