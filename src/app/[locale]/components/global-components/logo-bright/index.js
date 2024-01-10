@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Logo = ({ className, onClick }) => {
+const LogoBright = ({ className, onClick }) => {
   return (
     <Link href="/" onClick={onClick}>
       <Image
@@ -17,4 +17,4 @@ const Logo = ({ className, onClick }) => {
   );
 };
 
-export default Logo;
+export default LogoBright;

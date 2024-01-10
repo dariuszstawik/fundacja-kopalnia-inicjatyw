@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Logo from "../Logo";
+import Logo from "../Logo-dark";
 import { useTranslations } from "next-intl";
+import LogoDark from "../Logo-dark";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -11,7 +12,7 @@ export default function Footer() {
           <div className="container mx-auto px-10">
             <div className="flex flex-wrap mb-6 lg:mb-10">
               <div className="mb-auto w-full lg:w-1/5">
-                <Logo className="mt-4 w-64" />
+                <LogoDark className="mt-4 w-64" />
               </div>
               <div className="mb-5 w-full lg:w-1/5">
                 <h4 className="mb-2">Fundacja Kopalnia Inicjatyw</h4>

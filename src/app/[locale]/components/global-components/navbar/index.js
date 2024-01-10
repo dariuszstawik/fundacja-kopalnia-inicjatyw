@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import Logo from "../Logo";
+import Logo from "../Logo-dark";
 import Hamburger from "../hamburger";
 import LocaleSwitcher from "../locale-switcher";
+import LogoDark from "../Logo-dark";
 
 const Navbar = ({
   isActive,
@@ -34,7 +35,7 @@ const Navbar = ({
 
   return (
     <div className="text-xl antialiased fixed w-screen h-28 flex justify-between items-center px-10 lg:px-16 py-4 bg-darkGray top-0 left-0 z-50 border-y-4 border-white">
-      <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
+      <LogoDark closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
       <div className="pl-16 w-full flex justify-end content-center items-center gap-6">
         <ul
           className={
