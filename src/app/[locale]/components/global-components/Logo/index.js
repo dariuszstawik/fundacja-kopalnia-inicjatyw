@@ -6,8 +6,9 @@ const Logo = ({ className, onClick }) => {
   return (
     <Link href="/" onClick={onClick}>
       <Image
-        src="/logo.svg"
-        width="100"
+        // src="/logo.svg"
+        src="/FKI_nowelogo.png"
+        width="150"
         height="88"
         className={`m-10 ml-0 lg:ml-10 ${className}`}
         alt="logo"

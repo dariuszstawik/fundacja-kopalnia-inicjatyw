@@ -5,6 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import Navbar from "./components/global-components/navbar";
 import Footer from "./components/global-components/footer";
+import NavbarWhite from "./components/global-components/navbar-white";
 
 const locales = ["en", "pl"];
 
@@ -27,7 +28,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <Navbar
+        <NavbarWhite
           start={t("start")}
           about={t("about")}
           projects={t("projects")}
