@@ -3,7 +3,13 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import ArrowLong from "../arrow-long";
 
-export default function ProjectCard({ projectTitle, img, slug, locale }) {
+export default function ProjectCard({
+  projectTitle,
+  img,
+  slug,
+  locale,
+  isWhite,
+}) {
   return (
     <Fade direction="bottom" delay="50" triggerOnce>
       <Link href={`/${locale}/projekty/${slug}`}>
@@ -23,7 +29,7 @@ export default function ProjectCard({ projectTitle, img, slug, locale }) {
               borderBottom: "16px solid #09888f",
             }}
           />
-          <h4 className="text-center">
+          <h4 className={`text-center ${isWhite && "text-white"}`}>
             {projectTitle}
             <div className="mt-2 w-28 h-1 mx-auto rounded-sm -rotate-3 bg-primaryBlue" />
           </h4>

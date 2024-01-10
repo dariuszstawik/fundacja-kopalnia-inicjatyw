@@ -11,9 +11,14 @@ export default function ParagraphWithImageOnTheLeft({
   buttonTitle,
   buttonLink,
   locale,
+  isGray,
 }) {
   return (
-    <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
+    <div
+      className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row ${
+        isGray && "bg-gray-200"
+      }`}
+    >
       <Slide
         direction="left"
         delay={200}

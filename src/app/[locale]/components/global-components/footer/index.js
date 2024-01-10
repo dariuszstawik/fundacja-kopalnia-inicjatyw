@@ -10,11 +10,11 @@ export default function Footer() {
       <section className="relative bg-darkGray mt-32 text-white h-auto mb-0">
         <div className="pb-12 pt-0">
           <div className="container mx-auto px-10">
-            <div className="flex flex-wrap mb-6 lg:mb-10">
-              <div className="mb-auto w-full lg:w-1/5">
+            <div className="flex flex-wrap mb-6 xl:mb-10">
+              <div className="mb-auto mr-4 w-full xl:w-1/4">
                 <LogoDark className="mt-4 w-64" />
               </div>
-              <div className="mb-5 w-full lg:w-1/5">
+              <div className="mb-5 w-full xl:w-1/5">
                 <h4 className="mb-2">Fundacja Kopalnia Inicjatyw</h4>
                 <p>{t("about")}</p>
                 <div className="flex gap-8 mt-6">
@@ -35,13 +35,13 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
-                <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
+              <div className="w-full xl:w-1/2 flex flex-wrap -mx-3 justify-end">
+                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6 px-3">
                   <h5 className="mb-4 font-bold">{t("office")}</h5>
                   <p className="leading-loose my-0">ul. 15 Grudnia 3/26</p>
                   <p className="leading-loose my-0">42-500 Będzin</p>
                 </div>
-                <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
+                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 px-3">
                   <h5 className="mb-4 font-bold">{t("contact")}</h5>
                   <p className="leading-loose my-0">info.kopalnia@gmail.com</p>
                   <p className="leading-loose my-0">tel. 660 461 849</p>

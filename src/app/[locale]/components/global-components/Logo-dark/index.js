@@ -6,7 +6,8 @@ const LogoDark = ({ className, onClick }) => {
   return (
     <Link href="/" onClick={onClick}>
       <Image
-        src="/logo.svg"
+        src="/FKI_logo.png"
+        // src="/logo.svg"
         // src="/FKI_nowelogo.png"
         width="150"
         height="88"
