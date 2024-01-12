@@ -60,12 +60,8 @@ export default async function Home({ params: { locale } }) {
       >
         {documentToReactComponents(homepageAboutSection.content)}
       </ParagraphWithImageOnTheLeft>
-      <HomepageProjectsSection
-        projects={projects}
-        locale={locale}
-        isDark={false}
-      />
-      <HomepageNewsSection newsPosts={newsPosts} locale={locale} />
+      <HomepageProjectsSection projects={projects} locale={locale} isDark />
+      <HomepageNewsSection newsPosts={newsPosts} locale={locale} isDark />
       <PartnersSection partners={partners} />
     </>
   );

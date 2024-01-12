@@ -9,6 +9,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export default function ContactSection({
   title,
   address,
+  addressSecondLine,
   phoneNumber,
   email,
   content,
@@ -47,7 +48,7 @@ export default function ContactSection({
           <div className="mb-2">{documentToReactComponents(content)}</div>
           <p className="my-0">
             <AddressIcon />
-            {address}
+            {address} , {addressSecondLine}
           </p>
           <p className="my-0">
             <PhoneIcon />

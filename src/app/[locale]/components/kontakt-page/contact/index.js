@@ -17,6 +17,7 @@ export default async function Contact({ locale, socialTitle }) {
         title={contactContent.fields.title}
         content={contactContent.fields.paragraph}
         address={contactContent.fields.address}
+        addressSecondLine={contactContent.fields.addressSecondLine}
         phoneNumber={contactContent.fields.phone}
         email={contactContent.fields.email}
         img={contactContent.fields.image}

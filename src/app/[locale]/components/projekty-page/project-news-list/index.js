@@ -20,6 +20,7 @@ export default function ProjectNewsList({ newsPosts, locale, category }) {
               img={item.fields.image ? item.fields.image : ""}
               locale={locale}
               readMore={t("read more")}
+              isDark
             />{" "}
           </li>
         );

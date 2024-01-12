@@ -22,6 +22,7 @@ export default function NewsList({ newsPosts, locale, more, readMore }) {
               img={item.fields.image ? item.fields.image : ""}
               locale={locale}
               readMore={readMore}
+              isDark
             />{" "}
           </li>
         );

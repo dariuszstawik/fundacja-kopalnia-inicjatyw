@@ -24,11 +24,12 @@ export default function LocaleLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) notFound();
   unstable_setRequestLocale(locale);
   const t = useTranslations("Navbar");
+  const tf = useTranslations("Footer");
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NavbarWhite
+        <Navbar
           start={t("start")}
           about={t("about")}
           projects={t("projects")}
@@ -38,7 +39,12 @@ export default function LocaleLayout({ children, params: { locale } }) {
           locale={locale}
         />
         {children}
-        <Footer />
+        <Footer
+          about={tf("about")}
+          office={tf("office")}
+          contact={tf("contact")}
+          locale={locale}
+        />
       </body>
     </html>
   );

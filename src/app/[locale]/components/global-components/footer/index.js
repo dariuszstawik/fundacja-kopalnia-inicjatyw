@@ -2,9 +2,19 @@ import Link from "next/link";
 import Logo from "../Logo-dark";
 import { useTranslations } from "next-intl";
 import LogoDark from "../Logo-dark";
+import { client } from "../../../../../../lib/contentful/client";
 
-export default function Footer() {
-  const t = useTranslations("Footer");
+async function getContentfulContent(locale) {
+  const resContact = await client.getEntries({
+    content_type: "contact",
+    locale: locale,
+  });
+  return resContact.items[0];
+}
+
+export default async function Footer({ about, office, contact, locale }) {
+  // const t = useTranslations("Footer");
+  const contactContent = await getContentfulContent(locale);
   return (
     <div>
       <section className="relative bg-darkGray mt-32 text-white h-auto mb-0">
@@ -16,7 +26,7 @@ export default function Footer() {
               </div>
               <div className="mb-5 w-full xl:w-1/5">
                 <h4 className="mb-2">Fundacja Kopalnia Inicjatyw</h4>
-                <p>{t("about")}</p>
+                <p>{about}</p>
                 <div className="flex gap-8 mt-6">
                   <a href="https://www.facebook.com/kopalnia" target="_blank">
                     <img src="/facebook.png" className="w-8" />
@@ -37,14 +47,22 @@ export default function Footer() {
               </div>
               <div className="w-full xl:w-1/2 flex flex-wrap -mx-3 justify-end">
                 <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6 px-3">
-                  <h5 className="mb-4 font-bold">{t("office")}</h5>
-                  <p className="leading-loose my-0">ul. 15 Grudnia 3/26</p>
-                  <p className="leading-loose my-0">42-500 Będzin</p>
+                  <h5 className="mb-4 font-bold">{office}</h5>
+                  <p className="leading-loose my-0">
+                    {contactContent.fields.address}
+                  </p>
+                  <p className="leading-loose my-0">
+                    {contactContent.fields.addressSecondLine}
+                  </p>
                 </div>
                 <div className="mb-6 w-full md:w-1/2 xl:w-1/3 px-3">
-                  <h5 className="mb-4 font-bold">{t("contact")}</h5>
-                  <p className="leading-loose my-0">info.kopalnia@gmail.com</p>
-                  <p className="leading-loose my-0">tel. 660 461 849</p>
+                  <h5 className="mb-4 font-bold">{contact}</h5>
+                  <p className="leading-loose my-0">
+                    {contactContent.fields.email}
+                  </p>
+                  <p className="leading-loose my-0">
+                    {contactContent.fields.phone}
+                  </p>
                 </div>
               </div>
             </div>
